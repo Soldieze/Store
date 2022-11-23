@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "MS";
+    src: url(./font/montserrat/Montserrat-Bold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    font-family: "MS";
+    font-size: 1.5rem;
+}
+
+#cate{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    font-family: "MS";
+    font-size: 1.5rem;
+}
+
+#imgHeader{
+    background-image: url(./img/jeans.jpg);
+    height: 35vh;
+    background-size: cover;
+    margin: 0 1rem;
+    color: white;
+    font-family: "MS";
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#imgHeader h3{
+    font-size: 2rem;
+    margin: 2rem 1rem;
+}
+
+#imgHeader p{
+    margin: 0 1rem;
+}
+
+#imgHeader button{
+    width: 5rem;
+    margin: 1rem;
+    border: none;
+    padding: 0.5rem;
+    background-color: black;
+    color: white;
+}
+
+#productcard{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card{
+    width: 50%;
+    padding: 1rem 0.5rem;
+}
+
+
+
+.cardimg img{
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.cardDesc p{
+    font-family: "MS";
+    color: grey;
+    margin: 1rem 0;
+}
+
+.cardPrice{
+    font-family: "Ms";
+    font-size: 1.5rem;
+
+}
+
+#nbitems{
+    margin: 1rem;
+    font-family: "MS";
+    color: grey;
+}
+
