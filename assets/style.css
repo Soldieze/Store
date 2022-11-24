@@ -1,12 +1,13 @@
 @font-face {
     font-family: "MS";
-    src: url(./font/montserrat/Montserrat-Bold.ttf);
+    src: url(./font/montserrat/Montserrat-Regular.ttf);
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "MS";
 }
 
 nav{
@@ -18,6 +19,10 @@ nav{
     padding: 1rem;
     font-family: "MS";
     font-size: 1.5rem;
+}
+
+#select{
+    display: none;
 }
 
 #cate{
@@ -71,12 +76,27 @@ nav{
     padding: 1rem 0.5rem;
 }
 
+.cardimg{
+    display: flex;
+    flex-flow: row;
+}
 
 
 .cardimg img{
     width: 100%;
     box-sizing: border-box;
+    position: relative;
 
+}
+
+.cardimg figcaption{
+    text-align: center;
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    
+    
 }
 
 .cardDesc p{
@@ -91,9 +111,292 @@ nav{
 
 }
 
+ #redprice{
+    color: red;
+ }
+
 #nbitems{
     margin: 1rem;
     font-family: "MS";
     color: grey;
+}
+
+#sub{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 2rem;
+}
+
+#sub h3{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+#sub p{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#sub input{
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#sub button{
+    border: none;
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    background-color: red;
+}
+
+#send{
+    background-color: rgb(178, 178, 178);
+    color: rgb(88, 88, 88);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#send h3{
+    text-align: center;
+    margin: 2rem;
+    font-size: 2rem;
+}
+
+#send p{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+
+}
+
+#send input{
+    padding: 1rem;
+    width: 90%;
+    margin: 0.2rem auto;
+    font-size: 1.2rem;
+}
+
+#send button{
+    width: 90%;
+    margin: 0.2rem auto;
+
+    padding: 1rem;
+    color: white;
+    background-color: black;
+    font-size: 1.5rem;
+}
+
+#aboutStoreWA{
+    display: flex;
+    width: 100%;
+    background-color: rgb(178, 178, 178);
+    color: rgb(88, 88, 88);
+}
+
+#about{
+    width: 50%;
+    text-align: center;
+}
+
+#about h3{
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+#about p{
+    margin: 1rem;
+    text-decoration: underline;
+}
+
+#storeWA{
+    width: 50%;
+    text-align: center;
+}
+
+#store h3{
+    font-size: 2rem;
+    margin: 1.5rem;
+}
+
+#store p{
+    margin: 1rem;
+}
+
+#store i{
+    font-size: 1.5rem;
+}
+
+#wa h3{
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+#wa p{
+    margin: 1rem;
+
+}
+
+#wa i{
+    font-size: 1.5rem;
+}
+
+#network{
+    margin-bottom: 2rem;
+}
+
+#network i{
+    margin: 0 0.2rem;
+    
+}
+
+#powered{
+    color: white;
+    background-color: black;
+    width: 100%;
+    z-index: 0;
+}
+
+#powered p{
+    text-align: center;
+    padding: 5rem;
+}
+
+
+@media screen and (min-width: 726px) {
+    
+    nav{
+        display: none;
+    }
+
+    header{
+        width: 100%;
+        display: flex;
+    }
+
+    #select{
+        display: block;
+        width: 20%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        background-color: white;
+    }
+
+    .selectCate{
+        font-size: 1.5rem;
+        text-align: left;
+        padding: 2rem;
+        font-weight: 100;
+    }
+
+    #pro{
+        width: 80%;
+        margin-left: 20%;
+    }
+
+    main{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-left: 20%;
+        z-index: 0;
+    }
+
+    #select h2{
+        text-align: left;
+        padding: 5rem 2rem;
+        letter-spacing: 0.7rem;
+    }
+
+    .more{
+        font-size: 1rem;
+        text-align: center;
+        padding: 0.5rem;
+        font-weight: 100;
+    }
+    
+    .card{
+        width: 25%;
+        padding: 1rem 0.5rem;
+        cursor: pointer;
+    }
+
+
+    #all{
+        display: flex;
+        width: 80%;
+        margin-left: 20%;
+    }
+
+    #send{
+        width: 50%
+    }
+
+    #about, #storeWA{
+        width: 50%;
+    }
+
+    .selectCate:hover{
+        background-color: black;
+        color: white;
+        transition: all 1s;
+        cursor: pointer;
+    }
+
+    .more:hover{
+        background-color: black;
+        color: white;
+        transition: all 1s;
+        cursor: pointer;
+    }
+
+
+    #imgHeader{
+        height: 70vh;
+        justify-content: flex-start;
+    }
+
+    #imgHeader h3{
+        font-size: 3rem;
+        margin: 3rem 2rem;
+        font-weight: 200;
+        letter-spacing: 1.5rem;
+    }
+    
+    #imgHeader p{
+        font-size: 2rem;
+        font-weight: 300;
+        margin: 2rem 3rem;
+    }
+
+    #imgHeader button{
+        width: 20rem;
+        font-size: 3rem;
+        font-weight: 100;
+        margin: 5rem 1rem;
+        border: none;
+        padding: 0.5rem;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+    }
+
+    #send, #sub button:hover{
+        cursor: pointer;
+    }
+
+    #powered{
+        width: 80%;
+        margin-left: 20%;
+    }
 }
 
